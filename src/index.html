@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WEBleton Live</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
+</head>
+<body>
+
+<h1>WEBleton Live</h1>
+
+<main class="live">
+
+  <section class="track-selectors">
+    <button class="kick active" data-controls="kick">Kick</button>
+    <button class="hihat" data-controls="hihat">Hihat</button>
+    <button class="bass" data-controls="bass">Bass</button>
+    <button class="synth" data-controls="synth">Synth</button>
+  </section>
+
+  <section class="clips clearfix">
+    <div class="kick-column column">
+      <button class="clip" data-instrument="kick" data-pattern="1">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="kick" data-pattern="2">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="kick" data-pattern="3">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="kick" data-pattern="4">
+        <i class="play"></i>
+      </button>
+    </div>
+    <div class="hihat-column column">
+      <button class="clip" data-instrument="hihat" data-pattern="1">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="hihat" data-pattern="2">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="hihat" data-pattern="3">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="hihat" data-pattern="4">
+        <i class="play"></i>
+      </button>
+    </div>
+    <div class="bass-column column">
+      <button class="clip" data-instrument="bass" data-pattern="1">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="bass" data-pattern="2">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="bass" data-pattern="3">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="bass" data-pattern="4">
+        <i class="play"></i>
+      </button>
+    </div>
+    <div class="synth-column column">
+      <button class="clip" data-instrument="synth" data-pattern="1">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="synth" data-pattern="2">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="synth" data-pattern="3">
+        <i class="play"></i>
+      </button>
+      <button class="clip" data-instrument="synth" data-pattern="4">
+        <i class="play"></i>
+      </button>
+    </div>
+  </section>
+
+  <section class="mixer clearfix">
+    <div class="channel">
+      <input type="text" value="50" class="kick">
+      <br>
+      <label>Volume</label>
+    </div>
+    <div class="channel">
+      <input type="text" value="50" class="hihat">
+      <br>
+      <label>Volume</label>
+    </div>
+    <div class="channel">
+      <input type="text" value="50" class="bass">
+      <br>
+      <label>Volume</label>
+    </div>
+    <div class="channel">
+      <input type="text" value="50" class="synth">
+      <br>
+      <label>Volume</label>
+    </div>
+  </section>
+
+  <section class="instrument-controls clearfix">
+    <div class="kick-controls control-screen">
+      <h2>Kick</h2>
+      <div class="pitch single-control">
+        <input type="text" value="1">
+        <br>
+        <label>Pitch</label>
+      </div>
+      <div class="distortion single-control">
+        <input type="text" value="0">
+        <br>
+        <label>Distortion</label>
+      </div>
+      <div class="bitcrusher single-control">
+        <input type="text" value="0">
+        <br>
+        <label>8-bit</label>
+      </div>
+    </div>
+    <div class="hihat-controls control-screen hidden">
+      <h2>Hihat</h2>
+      <div class="pitch single-control">
+        <input type="text" value="1">
+        <br>
+        <label>Pitch</label>
+      </div>
+      <div class="hpf single-control">
+        <input type="text" value="1">
+        <br>
+        <label>High Pass Filter</label>
+      </div>
+      <div class="ping-pong-delay single-control">
+        <input type="text" value="0">
+        <br>
+        <label>Ping Pong Delay</label>
+      </div>
+    </div>
+    <div class="bass-controls control-screen hidden">
+      <h2>Bass</h2>
+      <div class="sustain single-control">
+        <input type="text" value="0.2">
+        <br>
+        <label>Sustain</label>
+      </div>
+      <div class="lpf single-control">
+        <input type="text" value="10">
+        <br>
+        <label>Low Pass Filter</label>
+      </div>
+      <div class="chorus single-control">
+        <input type="text" value="0">
+        <br>
+        <label>Chorus</label>
+      </div>
+    </div>
+    <div class="synth-controls control-screen hidden">
+      <h2>Synth</h2>
+      <div class="modulation single-control">
+        <input type="text" value="1">
+        <br>
+        <label>FM</label>
+      </div>
+      <div class="bpf single-control">
+        <input type="text" value="50">
+        <br>
+        <label>Band Pass Filter</label>
+      </div>
+      <div class="reverb single-control">
+        <input type="text" value="0">
+        <br>
+        <label>Reverb</label>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="transport">
+    <button class="play-button">
+      <img src="assets/img/play.svg">
+    </button>
+    <button class="stop-button">
+      <img src="assets/img/stop.svg">
+    </button>
+  </section>
+
+  <footer>
+    <p>Made by <a href="mailto:pmichalowski1@gmail.com">Piotr Michałowski</a> using: Tone.js / jQuery / ES6 / SASS / Webpack</p>
+  </footer>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+@import 'variables';
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+a, a:hover, a:visited, a:focus, a:active {
+  color: $text-color;
+  text-decoration: none;
+  font-weight: 500;
+}
